@@ -11,13 +11,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :test do
+group :development, :test do
   gem 'cucumber-rails', "~> 1.2.1"
   gem 'database_cleaner'
-  gem 'webrat'
-end
-
-group :development, :test do
+  gem 'capybara'
   gem 'rspec-rails', "~> 2.4"
   gem 'factory_girl_rails'
 end
