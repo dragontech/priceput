@@ -9,4 +9,18 @@
 
 %p
   =link_to "Edit my profile", edit_supplier_path(@supplier)
-  
+
+%p
+  My addresses
+
+- @supplier.addresses.each do |a|
+  %p
+    County: #{a.county}
+    %br
+    City: #{a.city}
+    %br
+    Street: #{a.street}
+    %br
+    Number: #{a.number}
+
+=link_to "add an address", new_supplier_address_path(@supplier)
