@@ -1,0 +1,12 @@
+%p Email: #{current_user.email}
+%p First name: #{@supplier.first_name}
+%p Last name: #{@supplier.last_name}
+%p Phone: #{@supplier.phone}
+%p Mobile phone: #{@supplier.mobile}
+%p Fax: #{@supplier.fax}
+%p CNP: #{@supplier.cnp}
+%p Website: #{@supplier.site}
+
+%p
+  =link_to "Edit my profile", edit_supplier_path(@supplier)
+  
