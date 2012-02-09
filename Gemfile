@@ -24,6 +24,12 @@ group :development do
   gem 'rails3-generators'
 end
 
+group :test do
+  gem 'guard-rspec'
+  gem 'spork'
+  gem 'guard-spork'
+end
+
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'devise'
