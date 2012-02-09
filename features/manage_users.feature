@@ -6,10 +6,10 @@ Feature: Manage users
   Scenario: Sign up user
     Given I am not logged in
     And I have no users
-    When I go to signup page
-    And I fill in "email" with "frank@microsoft.com"
-    And I fill in "password" with "mypassword"
-    And I fill in "password_confirmation" with "mypassword"
-    And I press "Create"
-    Then I should see "User signed up"
+    When I go to the new_user_registration page
+    And I fill in "Email" with "frank@microsoft.com"
+    And I fill in "Password" with "mypassword"
+    And I fill in "Password confirmation" with "mypassword"
+    And I press "Sign up"
+    Then I should see "Authenticated as frank@microsoft.com"
     And I should have 1 user

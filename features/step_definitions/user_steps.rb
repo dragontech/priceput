@@ -1,23 +1,18 @@
-Given /^I am not logged in$/ do
-  pending # express the regexp above with the code you wish you had
+Given /^I have a user with "([^"]*)" equals "([^"]*)"$/ do |arg1, arg2|
+  @user = User.new(:email => "frank@microsoft.com")
+  @user.password = "mypassword"
+  @user.password_confirmation = "mypassword"
+  
+  @user.save!
+  
+  @supplier = Factory(:supplier, user: @user)
+  @address = Factory(:address, addressable: @supplier)
 end
 
 Given /^I have no users$/ do
-  pending # express the regexp above with the code you wish you had
+  User.count.blank?
 end
 
-When /^I go to signup page$/ do
-  visit new_user_registration_path
-end
-
-When /^I fill in "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
-end
-
-When /^I press "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
-end
-
-Then /^I should have (\d+) user$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^I should have (\d+) user$/s do |arg1|
+  User.count == arg1
 end
