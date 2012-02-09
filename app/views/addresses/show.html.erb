@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Addressable:</b>
+  <%= @address.addressable_id %>
+</p>
+
+<p>
+  <b>Addressable type:</b>
+  <%= @address.addressable_type %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%= @address.county %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address.city %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @address.street %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @address.number %>
+</p>
+
+<p>
+  <b>Block:</b>
+  <%= @address.block %>
+</p>
+
+<p>
+  <b>Apartment:</b>
+  <%= @address.apartment %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%= @address.zip_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>
