@@ -22,6 +22,7 @@ end
 group :development do
   # required to generate factory_girl fixtures under rails 3 as of 20110518
   gem 'rails3-generators'
+  gem 'guard-cucumber'
 end
 
 group :test do
