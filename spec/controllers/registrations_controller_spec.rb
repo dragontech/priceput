@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "User" do 
   before (:each) do
-    @request.env["devise.mapping"] = Devise.mappings[:user]
     @user_attr = Factory.attributes_for(:user)
 
     @user = User.new(:email => @user_attr[:email])
