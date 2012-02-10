@@ -20,7 +20,7 @@ Feature: Manage addresses
     And I should see "Number: 13"
       
   Scenario: Edit my address
-    Given I am signed in as "frank@microsoft.com"
+    Given I am signed in as Frank
     When I go to the homepage
     And I follow "logout"
     Then I should see "Signed out successfully."

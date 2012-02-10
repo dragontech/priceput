@@ -4,13 +4,13 @@ Feature: Manage suppliers
   I want to have control over my profile details
   
   Scenario: User views his profile
-    Given I am signed in as "frank@microsoft.com"
+    Given I am signed in as Frank
     When I go to the homepage
     And I follow "my profile"
     Then I should see "Email: frank@microsoft.com"
 
   Scenario: User edits his profile
-    Given I am signed in as "frank@microsoft.com"
+    Given I am signed in as Frank
     And I go to the homepage
     And I follow "my profile"
     When I follow "Edit my profile"

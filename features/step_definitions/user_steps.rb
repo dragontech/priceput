@@ -1,7 +1,9 @@
 Given /^I have Frank as a user$/ do
-  @user = User.new(:email => "frank@microsoft.com")
-  @user.password = "mypassword"
-  @user.password_confirmation = "mypassword"
+  @user_attr = Factory.attributes_for(:user)
+
+  @user = User.new(:email => @user_attr[:email])
+  @user.password = @user_attr[:password]
+  @user.password_confirmation = @user_attr[:password]
   
   @user.save!
   
@@ -18,9 +20,11 @@ Then /^I should have (\d+) user$/s do |number_of_users|
 end
 
 Given /^I see my profile$/ do
-  @user = User.new(:email => "frank@microsoft.com")
-  @user.password = "mypassword"
-  @user.password_confirmation = "mypassword"
+  @user_attr = Factory.attributes_for(:user)
+  
+  @user = User.new(:email => @user_attr[:email])
+  @user.password = @user_attr[:password]
+  @user.password_confirmation = @user_attr[:password]
   @user.save!
   
   @supplier = Factory(:supplier, user: @user)
