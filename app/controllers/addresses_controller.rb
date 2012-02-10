@@ -24,6 +24,7 @@ class AddressesController < ApplicationController
   # GET /addresses/new
   # GET /addresses/new.json
   def new
+    @supplier = Supplier.find(params[:supplier_id])
     @address = Address.new
 
     respond_to do |format|
@@ -40,6 +41,7 @@ class AddressesController < ApplicationController
   # POST /addresses
   # POST /addresses.json
   def create
+    @supplier = Supplier.find(params[:supplier_id])
     @address = Address.new(params[:address])
 
     respond_to do |format|
