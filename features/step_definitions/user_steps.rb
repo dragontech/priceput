@@ -1,4 +1,4 @@
-Given /^I have a user with "([^"]*)" equals "([^"]*)"$/ do |arg1, arg2|
+Given /^I have Frank as a user$/ do
   @user = User.new(:email => "frank@microsoft.com")
   @user.password = "mypassword"
   @user.password_confirmation = "mypassword"
@@ -13,8 +13,8 @@ Given /^I have no users$/ do
   User.count.blank?
 end
 
-Then /^I should have (\d+) user$/s do |arg1|
-  User.count == arg1
+Then /^I should have (\d+) user$/s do |number_of_users|
+  User.count == number_of_users
 end
 
 Given /^I see my profile$/ do

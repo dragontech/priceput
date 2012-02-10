@@ -4,7 +4,7 @@ Feature: Manage sessions
   I want to be able to sign in and sogn out
   
   Scenario: Sign in
-    Given I have a user with "email" equals "frank@microsoft.com"
+    Given I have Frank as a user
     And I am not logged in
     When I go to the new_user_session page
     And fill in "Email" with "frank@microsoft.com"
