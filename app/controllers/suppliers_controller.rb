@@ -1,9 +1,10 @@
 class SuppliersController < ApplicationController
+  before_filter :set_supplier, only: [:show, :edit, :update] 
+  
   def index
   end
 
   def show
-    @supplier = Supplier.find(params[:id])
   end
 
   def new
@@ -13,12 +14,9 @@ class SuppliersController < ApplicationController
   end
 
   def edit
-    @supplier = Supplier.find(params[:id])
   end
 
   def update     
-    @supplier = Supplier.find(params[:id])
-
     if @supplier.update_attributes(params[:supplier])
       redirect_to @supplier, notice: 'Supplier was successfully updated.'
     else
@@ -28,4 +26,11 @@ class SuppliersController < ApplicationController
 
   def destroy
   end
+  
+  private
+  
+  def set_supplier
+    @supplier = Supplier.find(params[:id])
+  end
+  
 end
