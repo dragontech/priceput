@@ -17,11 +17,11 @@
     = f.label :last_name
     = f.text_field :last_name
 
-  .field
+  .field{ class: (@supplier.errors.messages.keys.include?(:base) ? "field_with_errors" : "") }
     = f.label :phone
     = f.text_field :phone
 
-  .field
+  .field{ class: (@supplier.errors.messages.keys.include?(:base) ? "field_with_errors" : "") }
     = f.label :mobile
     = f.text_field :mobile
 
