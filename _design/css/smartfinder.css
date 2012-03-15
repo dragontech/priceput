@@ -1,0 +1,202 @@
+header {
+  background-color: #efefef;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #007EC6;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #F67000;
+}
+
+p {
+  color: #202020;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+a, p {
+  font-size: 14px;
+}
+
+#logo {
+  display: inline-block;
+  vertical-align: top;
+  background-image: url('../img/logo.png');
+  margin: 20px;
+  width: 310px;
+  height: 55px;
+}
+
+#user-box {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0 20px 120px;
+}
+
+#user-box div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#user-box input {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  margin: 5px 0px;
+}
+
+#user-box button {
+  background-color: #808080;
+  border: 0 none;
+  border-radius: 13px 13px 13px 13px;
+  color: white;
+  display: inline-block;
+  height: 22px;
+  margin: 4px 0;
+  vertical-align: top;
+  width: 22px;
+}
+
+nav {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid white;
+}
+
+nav ul {
+  
+}
+
+nav ul li {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+
+nav ul li.newsletter {
+  width: 200px;
+  text-align: right;
+  margin-left: 390px;
+}
+
+nav ul li a {
+  display: inline-block;
+  vertical-align: center;
+  padding: 8px 16px;
+  margin-top: 7px;
+  border-radius: 14px;
+}
+
+nav ul li a.selected {
+  background-color: #007EC6;
+  color: white;
+}
+
+
+
+#descriptor {
+  background-color: #007CC5;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 335px;
+}
+
+#descriptor h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#descriptor img {
+  margin-top: 10px;
+}
+
+.margin40 {
+  margin: 40px auto;
+}
+
+#descriptor-footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid white;
+  height: 73px;
+}
+
+#content {
+  margin: 10px 0;
+}
+
+#menu {
+  
+}
+
+#menu h2 {
+  color: #404040;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#menu ul {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#menu ul li {
+  display: block;
+  width: 140px;
+  margin: 5px 0;
+  height: 32px;
+}
+
+#menu ul li a {
+  border: 1px solid #f0f0f0;
+  background-color: #f8f8f8;
+  display: block;
+  border-radius: 12px;
+  color: #404040;
+  text-indent: 30px;
+  padding: 7px 0;
+  text-decoration: none;
+}
+
+#menu ul li a.active, #menu ul li a:hover {
+  background-color: #007EC6;
+  color: #efefef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
