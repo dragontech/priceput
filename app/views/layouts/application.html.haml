@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Smart Finder
+    = stylesheet_link_tag('application', :media => "all")
+    = javascript_include_tag('application')
+    = yield :head
+    = csrf_meta_tags
+
+  %body
+    = render(:partial => 'shared/header')
+    = yield 
