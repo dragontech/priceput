@@ -4,6 +4,12 @@ Priceput::Application.routes.draw do
 
   devise_for :users
 
+  resources :users do
+    collection do
+      get 'profile'
+    end
+  end
+
   resources :suppliers do
     resources :addresses
   end
