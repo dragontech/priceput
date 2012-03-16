@@ -9,6 +9,6 @@ class User < ActiveRecord::Base
   has_many :suppliers  
 
   def name
-  	(first_name + last_name).strip.blank? ? email : "#{first_name} #{last_name}"
+  	(first_name.to_s + last_name.to_s).strip.blank? ? email : "#{first_name} #{last_name}"
   end
 end
